@@ -1,0 +1,112 @@
+object frmmain: Tfrmmain
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Life Day Spa Invoice Manager'
+  ClientHeight = 492
+  ClientWidth = 770
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Menu = mm1
+  Position = poScreenCenter
+  OnShow = FormShow
+  TextHeight = 15
+  object pnl1: TPanel
+    Left = 8
+    Top = 8
+    Width = 754
+    Height = 57
+    BevelInner = bvLowered
+    TabOrder = 0
+    object lbl1: TLabel
+      Left = 232
+      Top = 21
+      Width = 320
+      Height = 15
+      Caption = 'Use The Following Form To Manage Invoices In The Database'
+    end
+  end
+  object dbgrdmain: TDBGrid
+    Left = 8
+    Top = 71
+    Width = 754
+    Height = 413
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -12
+    TitleFont.Name = 'Segoe UI'
+    TitleFont.Style = []
+  end
+  object mm1: TMainMenu
+    Left = 376
+    Top = 248
+    object File1: TMenuItem
+      Caption = 'File'
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object File2: TMenuItem
+        Caption = 'Add Invoice'
+        OnClick = File2Click
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+      object ViewInvoice1: TMenuItem
+        Caption = 'View Invoice'
+        OnClick = ViewInvoice1Click
+      end
+      object N3: TMenuItem
+        Caption = '-'
+      end
+      object ViewInvoice2: TMenuItem
+        Caption = 'Print Invoice'
+        OnClick = ViewInvoice2Click
+      end
+      object N4: TMenuItem
+        Caption = '-'
+      end
+      object Exit1: TMenuItem
+        Caption = 'Exit'
+      end
+      object N5: TMenuItem
+        Caption = '-'
+      end
+    end
+    object Settings1: TMenuItem
+      Caption = 'Settings'
+      object N6: TMenuItem
+        Caption = '-'
+      end
+      object DatabaseBackup1: TMenuItem
+        Caption = 'Database Backup'
+        object N8: TMenuItem
+          Caption = '-'
+        end
+        object AutoBackup1: TMenuItem
+          Caption = 'Auto Backup'
+        end
+        object N9: TMenuItem
+          Caption = '-'
+        end
+        object Backup1: TMenuItem
+          Caption = 'Backup'
+        end
+        object N10: TMenuItem
+          Caption = '-'
+        end
+      end
+      object N7: TMenuItem
+        Caption = '-'
+      end
+    end
+    object Help1: TMenuItem
+      Caption = 'Help'
+    end
+  end
+end

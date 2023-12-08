@@ -1,0 +1,14 @@
+program Life_Day_Spa_Invoice_Manager;
+
+uses
+  Vcl.Forms,
+  Frm_Invoice_Manager_Main_U in 'Frm_Invoice_Manager_Main_U.pas' {frmmain};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(Tfrmmain, frmmain);
+  Application.Run;
+end.

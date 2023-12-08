@@ -1,0 +1,35 @@
+unit Frm_Capture_U;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.ExtCtrls;
+
+type
+  Tfrmcapture = class(TForm)
+    pnl1: TPanel;
+    mm1: TMainMenu;
+    File1: TMenuItem;
+    File2: TMenuItem;
+    Cancel1: TMenuItem;
+    Cancel2: TMenuItem;
+    N1: TMenuItem;
+    N2: TMenuItem;
+    N3: TMenuItem;
+    N4: TMenuItem;
+    Help1: TMenuItem;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmcapture: Tfrmcapture;
+
+implementation
+
+{$R *.dfm}
+
+end.

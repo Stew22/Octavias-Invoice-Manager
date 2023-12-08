@@ -1,0 +1,24 @@
+unit Frm_Capture_U;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+
+type
+  Tfrmcapture = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmcapture: Tfrmcapture;
+
+implementation
+
+{$R *.dfm}
+
+end.
